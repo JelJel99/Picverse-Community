@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submission</title>
+    <!-- Konek ke CSS -->
+    <link rel="stylesheet" href="../CSS/Style-Submission.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body id="submission-page">
+    <div class="header">
+        <div class="header-logo">
+            <a href="Home.html"><img src="../Asset/Picture/Picverse_logo.png" alt="Picverse Logo"></a>
+
+            <div class="logo-text">
+                <a href="Home.html">
+                    <h1>Picverse</h1>
+                    <h2>Community</h2>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">☰</div> <div class="nav-bar" id="main-navbar"> <ul>
+                <li><a data-active="home-page" href="Home.html">HOME</a></li>
+                <li><a data-active="gallery-page" href="Gallery.html">GALLERY</a></li>
+                <li><a data-active="submission-page" href="Submission.html">SUBMISSION</a></li>
+                <li><a data-active="community-page" href="Community.html">COMMUNITY</a></li>
+                <li><a data-active="aboutUs-page" href="AboutUs.html">ABOUT US</a></li>
+            </ul>
+            <div class="sign-buttons mobile-only"> <button class="btn sign-in-btn">Sign In</button>
+                <button class="btn sign-up-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="submission">
+        <img src="../Asset/Picture/milan-vasek-sheepland-final3.jpg" alt="Sheepland" class="bg-img">
+        <div class="overlay"></div>
+        <form class="submission-form" id="submissionForm"> <h1>Submit your Art Here!</h1>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <span class="error-message" id="emailError"></span> </div>
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Enter your art title">
+                <span class="error-message" id="titleError"></span> </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Enter your art description"></textarea>
+                <span class="error-message" id="descriptionError"></span> </div>
+
+            <div class="form-group">
+                <label for="tags">Tags</label>
+                <input type="text" id="tags" placeholder="Enter tags">
+                <span class="error-message" id="tagsError"></span> </div>
+
+            <div class="form-group">
+                <label for="uploadFile">Upload File</label>
+                <input type="file" id="uploadFile">
+                <span class="error-message" id="uploadFileError"></span> </div>
+            <div class="form-group radio-group">
+                <label>Is it AI generated?</label>
+                <div>
+                    <input type="radio" id="aiYes" name="aiGenerated" value="yes">
+                    <label for="aiYes">Yes</label>
+                    <input type="radio" id="aiNo" name="aiGenerated" value="no" checked>
+                    <label for="aiNo">No</label>
+                </div>
+                <span class="error-message" id="aiRadioError"></span> </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <hr>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="Home.html"><img src="../Asset/Picture/Picverse_logo.png" alt="Picverse Logo"></a>
+    
+                    <div class="logo-text">
+                        <a href="Home.html">
+                            <h1>Picverse</h1>
+                            <h2>Community</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                    </div>
+                    <div class="link-group">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><img src="../Asset/Picture/twitter.png" alt="X"></a>
+                    <a href="#"><img src="../Asset/Picture/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../Asset/Picture/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../Asset/Picture/mail.png" alt="Email"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<!-- KONEK JS -->
+ <script src="../JS/Script-Submission.js" defer></script>
+<script src="../JS/main.js" defer></script>
+</html>

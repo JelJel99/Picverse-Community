@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- Konek ke CSS -->
+    <link rel="stylesheet" href="../CSS/Style-Home.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body id="home-page">
+    <div class="header">
+        <div class="header-logo">
+            <a href="Home.html"><img src="../Asset/Picture/Picverse_logo.png" alt="Picverse Logo"></a>
+
+            <div class="logo-text">
+                <a href="Home.html">
+                    <h1>Picverse</h1>
+                    <h2>Community</h2>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">☰</div> <div class="nav-bar" id="main-navbar"> <ul>
+                <li><a data-active="home-page" href="Home.html">HOME</a></li>
+                <li><a data-active="gallery-page" href="Gallery.html">GALLERY</a></li>
+                <li><a data-active="submission-page" href="Submission.html">SUBMISSION</a></li>
+                <li><a data-active="community-page" href="Community.html">COMMUNITY</a></li>
+                <li><a data-active="aboutUs-page" href="AboutUs.html">ABOUT US</a></li>
+            </ul>
+            <div class="sign-buttons mobile-only"> <button class="btn sign-in-btn">Sign In</button>
+                <button class="btn sign-up-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="hero-section">
+            <img id="hero-image-1" src="../Asset/Picture/tyler-smith-tropforestwolves01-finalrender02.jpg"
+            alt="Art Display" class="hero_img active">
+            <img id="hero-image-2" src="../Asset/Picture/vladimir-motsar-uewe324332.jpg" alt="Art Display" class="hero_img">
+
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <div class="hero-title">
+                        <span class="left-text">YOUR</span>
+                        <div class="right-text">
+                            <span>ART,</span>
+                            <span>SPACE,</span>
+                            <span>COMMUNITY</span>
+                        </div>
+                    </div>
+                    <div class="artist-info">
+                        <p id="artist-name">- TYLER SMITH -</p>
+                    </div>
+                    <a href="Gallery.html" class="hero-button">Go to Gallery</a>
+                </div>
+            </div>
+        </div>
+        <div class="trend-tag">
+            <h1>Trending Tags</h1>
+            <div class="tags-list">
+                <ul>
+                    <li><a href="#">#landscape</a></li>
+                    <li><a href="#">#realism</a></li>
+                    <li><a href="#">#arcane</a></li>
+                    <li><a href="#">#assasin</a></li>
+                    <li><a href="#">#snowWhite</a></li>
+                    <li><a href="#">#stardew</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="featured-container"></div>
+    </div>
+
+    <div class="footer">
+        <hr>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="Home.html"><img src="../Asset/Picture/Picverse_logo.png" alt="Picverse Logo"></a>
+    
+                    <div class="logo-text">
+                        <a href="Home.html">
+                            <h1>Picverse</h1>
+                            <h2>Community</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                    </div>
+                    <div class="link-group">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><img src="../Asset/Picture/twitter.png" alt="X"></a>
+                    <a href="#"><img src="../Asset/Picture/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../Asset/Picture/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../Asset/Picture/mail.png" alt="Email"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<!-- Konek ke JS -->
+<script src="../JS/Script-Home.js" defer></script>
+<script src="../JS/main.js" defer></script>
+</html>

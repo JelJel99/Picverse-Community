@@ -1,0 +1,424 @@
+.hero-section {
+    position: relative;
+    height: 550px;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 71px;
+}
+
+.hero_img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.hero_img.active {
+    opacity: 1;
+}
+
+#artist-name {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.hero-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero-content {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    pointer-events: auto;
+}
+
+.hero-title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hero-title .left-text {
+    font-size: 18rem;
+    font-weight: 300;
+    font-family: 'Niagara';
+    letter-spacing: 0.02em;
+    text-shadow: 7px 4px #979797;
+    align-self: center;
+}
+
+.hero-title .right-text {
+    font-family: Bayon;
+    display: flex;
+    flex-direction: column;
+    font-size: 3.9rem;
+    line-height: 1.2;
+    text-align: left;
+    align-self: center;
+}
+
+.artist-info p {
+    font-family: 'Cinzel-Regular';
+    font-size: 1.4rem;
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.2);
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 0px;
+}
+
+.hero-button {
+    font-size: 1.1rem;
+    font-family: 'Varela';
+    display: inline-block;
+    padding: 0.3rem 1.3rem;
+    border: 1.5px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.hero-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+.trend-tag {
+    background-color: var(--secondary-bg);
+}
+
+.trend-tag h1 {
+    color: white;
+    font-size: 2em;
+    font-family: Alice;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-left: 46px;
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.trend-tag h1::before,
+.trend-tag h1::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 225px;
+    height: 2px;
+    background: white;
+    margin: 0 16px;
+}
+
+.trend-tag h1::before {
+    margin-left: 0;
+}
+
+.trend-tag h1::after {
+    margin-right: 0;
+}
+
+.tags-list {
+    margin-left: 46px;
+    display: flex;
+    justify-content: center;
+}
+
+.trend-tag ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.trend-tag li a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.61;
+    background-color: var(--tag-bg);
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    border: 2.5px solid white;
+    border-radius: 7px;
+    
+    box-sizing: border-box;
+    margin-right: 30px;
+}
+
+.tags-list a {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.tags-list li a:hover {
+    color: white;
+    opacity: 1;
+}
+
+.featured-artwork h1 {
+    color: white;
+    font-size: 2em;
+    font-family: Alice;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-left: 46px;
+    text-align: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.featured-artwork h1::before,
+.featured-artwork h1::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 200px;
+    height: 2px;
+    background: white;
+    margin: 0 16px;
+}
+
+.featured-artwork h1::before {
+    margin-left: 0;
+}
+
+.featured-artwork h1::after {
+    margin-right: 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 258px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    height: 258px;
+    width: 258px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: #000;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 70%, transparent 100%);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.card-info .artist {
+    font-family: 'lucida typewriter';
+    font-weight: 700;
+    font-size: 0.85em;
+    margin-bottom: 5px;
+}
+
+.card-info .title {
+    font-family: 'lucida typewriter';
+    font-weight: normal;
+    font-size: 0.71em;
+    color: white;
+}
+
+.likes {
+    position: absolute;
+    bottom: 15px;
+    right: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-size: 0.69em;
+    color: #f8d0d7;
+    pointer-events: auto;
+}
+
+.heart-icon {
+    width: 20px !important;
+    height: auto !important;
+    border-radius: 0 !important;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.heart-icon.clicked {
+    transform: scale(1.2);
+}
+
+.heart-icon.clicked {
+    transform: scale(1.2);
+}
+
+/* RESPONSIF */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        height: 350px;
+    }
+
+    .hero_img {
+        height: 350px;
+    }
+
+    .hero-title {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .hero-title .left-text {
+        font-size: 8rem;
+        text-shadow: 3px 2px #979797;
+        line-height: 0.8;
+    }
+
+    .hero-title .right-text {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .artist-info p {
+        font-size: 1rem;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+    }
+
+    .hero-button {
+        font-size: 0.9rem;
+        padding: 0.3rem 1rem;
+        margin-top: 8px;
+    }
+
+    .trend-tag {
+        padding: 0px 15px;
+    }
+
+    .trend-tag h1::before,
+    .trend-tag h1::after,
+    .featured-artwork h1::before,
+    .featured-artwork h1::after {
+        width: 30px;
+        margin: 0 8px;
+    }
+
+    .tags-list {
+        margin-left: 0;
+        justify-content: center;
+        gap: 10px;
+        padding: 0 5px;
+        
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .tags-list ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        width: 100%;
+    }
+
+    .tags-list li {
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 1;
+    }
+
+    .tags-list li a {
+        font-size: 15px;
+        padding: 10px 16px;
+        margin: 0;
+        display: block;
+        box-sizing: border-box; 
+        white-space: nowrap;
+    }
+
+    .featured-artwork {
+        padding: 0px 15px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    .card {
+        width: 100%;
+        height: min(100vw - 30px, 300px);
+    }
+
+    .card img {
+        height: 100%;
+    }
+
+    .likes {
+        bottom: 10px;
+        right: 15px;
+        font-size: 0.7em;
+    }
+
+    .overlay {
+        padding: 10px;
+    }
+}

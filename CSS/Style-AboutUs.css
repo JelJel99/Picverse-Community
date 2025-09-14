@@ -1,0 +1,348 @@
+.about-introduction {
+    font-family: 'Alice';
+    background-color: #FDF9F2;
+    color: #333;
+    width: 100%;
+
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+    position: relative;
+}
+
+.about-introduction .intro-content {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    text-align: left;
+    font-family: 'Alice';
+}
+
+.about-introduction h1 {
+    font-size: 3.5em;
+    color: #1D262B;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+.about-introduction h2 {
+    font-size: 1.3em;
+    color: #1D262B;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.about-introduction p {
+    font-size: 1.1em;
+    color: #1D262B;
+}
+
+.about-introduction .intro-images {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.about-introduction .intro-images img {
+    position: absolute;
+    height: auto;
+}
+
+.about-introduction .intro-img-1 {
+    width: 160px;
+    bottom: 0px;
+    left: 0%;
+    z-index: 2;
+}
+.about-introduction .intro-img-2 {
+    width: 160px;
+    bottom: 0px;
+    left: 20%;
+    z-index: 3;
+}
+.about-introduction .intro-img-3 {
+    width: 154px;
+    top: 40px;
+    left: 40%;
+    z-index: 5;
+}
+.about-introduction .intro-img-4 {
+    width: 140px;
+    bottom: 20px;
+    left: 55%;
+    z-index: 4;
+}
+
+.vision-mission {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+    margin-bottom: 0px;
+    max-width: 2000px;
+}
+
+.box-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 450px;
+    min-width: 300px;
+    flex: 1;
+}
+
+.background-box {
+    position: absolute;
+    top: 5px;
+    right: 35px;
+    width: 100%;
+    height: 180px;
+    z-index: 0;
+}
+
+.vision-bg {
+    background-color: #e19987;
+}
+
+.mission-bg {
+    background-color: #ead6ad;
+}
+
+.content-box {
+    position: relative;
+    background-color: #1D262B;
+    height: 150px;
+    padding-left: 40px;
+    padding-right: 40px;
+    z-index: 1;
+    text-align: center;
+}
+
+.content-box h3 {
+    font-family: 'Alice';
+    font-size: 1.8em;
+    color: #EEEEEE;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.content-box p {
+    font-size: 1em;
+    color: #D7D7D7;
+}
+
+.vision-mission h3 {
+    font-family: 'Alice', serif;
+    font-size: 1.8em;
+    color: #EEEEEE;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.vision-mission p {
+    font-size: 1em;
+    color: #D7D7D7;
+}
+
+.key-features {
+    padding: 80px 5%;
+    text-align: center;
+}
+
+.key-features h2 {
+    font-family: 'Alice', serif;
+    font-size: 2.5em;
+    color: #FDF9F2;
+    margin-bottom: 40px;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    background-color: #1D262B;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 6px 6px 10px 3px #000000;
+}
+
+.feature-item .feature-icon {
+    width: 66px;
+    height: 66px;
+    margin-bottom: 10px;
+}
+
+.feature-item h4 {
+    font-size: 1.3em;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.feature-item p {
+    font-size: 1em;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .about-introduction {
+        flex-direction: column;
+        gap: 20px;
+        padding: 50px 5%;
+    }
+    .about-introduction .intro-content {
+        text-align: center;
+    }
+    .about-introduction h1 {
+        font-size: 2.5em;
+    }
+    .about-introduction h2 {
+        font-size: 1.4em;
+    }
+    .intro-images {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-introduction {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 3%;
+        gap: 20px;
+        text-align: center;
+        height: auto;
+    }
+
+    .about-introduction .intro-content {
+        text-align: center;
+        width: 100%;
+        max-width: unset;
+    }
+
+    .about-introduction h1 {
+        font-size: 2em;
+        margin-bottom: 5px;
+    }
+    .about-introduction h2 {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+    .about-introduction p {
+        font-size: 0.85em;
+    }
+
+    .about-introduction .intro-images {
+        height: 200px;
+        width: 100%;
+        min-width: unset;
+    }
+
+    .about-introduction .intro-img-1 {
+        width: 80px;
+        bottom: 10px;
+        left: 5%;
+    }
+    .about-introduction .intro-img-2 {
+        width: 90px;
+        bottom: 10px;
+        left: 30%;
+    }
+    .about-introduction .intro-img-3 {
+        width: 70px;
+        top: 10px;
+        right: 10%;
+    }
+    .about-introduction .intro-img-4 {
+        width: 60px;
+        bottom: 0px;
+        right: 0px;
+    }
+
+    .vision-mission {
+        padding: 0 15px;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-wrapper {
+        width: 100%;
+        max-width: 400px;
+        min-width: unset;
+        margin: 0 auto;
+    }
+
+    .background-box {
+        position: absolute;
+        z-index: 0;
+        top: 10px;
+        left: 10px;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+    }
+
+    .content-box {
+        position: relative;
+        z-index: 1;
+        background-color: #1D262B;
+        padding: 25px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .content-box h3 {
+        font-size: 1.5em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .content-box p {
+        font-size: 0.9em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .key-features {
+        padding: 40px 10px;
+    }
+    .key-features h2 {
+        font-size: 2em;
+        margin-bottom: 25px;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+        padding: 0 5px;
+        gap: 15px;
+    }
+    .feature-item {
+        width: 100%;
+        padding: 10px;
+    }
+}

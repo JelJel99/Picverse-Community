@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <!-- Konek ke CSS -->
+    <link rel="stylesheet" href="../CSS/Style-Community.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body id="community-page">
+    <div class="header">
+        <div class="header-logo">
+            <a href="Home.html"><img src="../Asset/Picture/Picverse_logo.png" alt="Picverse Logo"></a>
+
+            <div class="logo-text">
+                <a href="Home.html">
+                    <h1>Picverse</h1>
+                    <h2>Community</h2>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">☰</div> <div class="nav-bar" id="main-navbar"> <ul>
+                <li><a data-active="home-page" href="Home.html">HOME</a></li>
+                <li><a data-active="gallery-page" href="Gallery.html">GALLERY</a></li>
+                <li><a data-active="submission-page" href="Submission.html">SUBMISSION</a></li>
+                <li><a data-active="community-page" href="Community.html">COMMUNITY</a></li>
+                <li><a data-active="aboutUs-page" href="AboutUs.html">ABOUT US</a></li>
+            </ul>
+            <div class="sign-buttons mobile-only"> <button class="btn sign-in-btn">Sign In</button>
+                <button class="btn sign-up-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="community-page-container">
+        <section class="forum-discussions">
+            <h2>Forum Discussions</h2>
+            <div class="discussion-list"></div>
+        </section>
+
+        <section class="recent-activity">
+            <h2>Recent Activity</h2>
+            <div class="activity-list"></div>
+        </section>
+
+        <section class="active-users">
+            <h2>Active Users</h2>
+            <div class="user-list"></div>
+        </section>
+    </div>
+    <div class="footer">
+        <hr>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="Home.html"><img src="../Asset/Picture/Picverse_logo.png" alt="Picverse Logo"></a>
+    
+                    <div class="logo-text">
+                        <a href="Home.html">
+                            <h1>Picverse</h1>
+                            <h2>Community</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                    </div>
+                    <div class="link-group">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><img src="../Asset/Picture/twitter.png" alt="X"></a>
+                    <a href="#"><img src="../Asset/Picture/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../Asset/Picture/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../Asset/Picture/mail.png" alt="Email"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<!-- KONEK JS -->
+ <script src="../JS/Script-Community.js" defer></script>
+<script src="../JS/main.js" defer></script>
+</html>

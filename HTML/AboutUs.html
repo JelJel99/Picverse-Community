@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <!-- Konek ke CSS -->
+    <link rel="stylesheet" href="../CSS/Style-AboutUs.css">
+    <link rel="stylesheet" href="../CSS/main.css">
+</head>
+<body id="aboutUs-page">
+    <div class="header">
+        <div class="header-logo">
+            <a href="Home.html"><img src="../Asset/Picture/Picverse_logo.png" alt="Picverse Logo"></a>
+
+            <div class="logo-text">
+                <a href="Home.html">
+                    <h1>Picverse</h1>
+                    <h2>Community</h2>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">☰</div> <div class="nav-bar" id="main-navbar"> <ul>
+                <li><a data-active="home-page" href="Home.html">HOME</a></li>
+                <li><a data-active="gallery-page" href="Gallery.html">GALLERY</a></li>
+                <li><a data-active="submission-page" href="Submission.html">SUBMISSION</a></li>
+                <li><a data-active="community-page" href="Community.html">COMMUNITY</a></li>
+                <li><a data-active="aboutUs-page" href="AboutUs.html">ABOUT US</a></li>
+            </ul>
+            <div class="sign-buttons mobile-only"> <button class="btn sign-in-btn">Sign In</button>
+                <button class="btn sign-up-btn">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="about-introduction"> 
+        <div class="intro-content"> 
+            <h1>About Us</h1>
+            <h2>Your Art, Space, and Community</h2>
+            <p>Online platform where digital artists can share, discover, and connect with fellow creators.</p>
+        </div>
+        <div class="intro-images"> 
+            <img src="../Asset/Picture/artist.png" alt="artist animation" class="intro-img-1"> 
+            <img src="../Asset/Picture/cancan.png" alt="cancan" class="intro-img-2"> 
+            <img src="../Asset/Picture/digital-drawing.png" alt="digital drawing" class="intro-img-3"> 
+            <img src="../Asset/Picture/ape.png" alt="ape" class="intro-img-4"> 
+        </div>
+    </section>
+
+    <section class="vision-mission">
+        <div class="box-wrapper">
+            <div class="background-box vision-bg"></div>
+            <div class="content-box">
+            <h3>Our Vision</h3>
+            <p>To empower creativity by providing a space for artists of all levels to showcase their work and engage with a passionate community.</p>
+            </div>
+        </div>
+
+        <div class="box-wrapper">
+            <div class="background-box mission-bg"></div>
+            <div class="content-box">
+            <h3>Our Mission</h3>
+            <p>To build a platform where artists can share their creations, find inspiration, collaborate, and grow together through active discussions, ongoing activities, and meaningful connections with fellow creators.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="key-features">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <img src="../Asset/Picture/photo-gallery.png" alt="Art Sharing Icon" class="feature-icon">
+                <h4>Art Sharing</h4>
+                <p>Easily upload and share your artwork with the community.</p>
+            </div>
+            <div class="feature-item">
+                <img src="../Asset/Picture/chat.png" alt="Forum Discussions Icon" class="feature-icon">
+                <h4>Forum Discussions</h4>
+                <p>Participate in engaging conversations with other artists.</p>
+            </div>
+            <div class="feature-item">
+                <img src="../Asset/Picture/user.png" alt="User Profiles Icon" class="feature-icon">
+                <h4>User Profiles</h4>
+                <p>Create your profile and connect with like minded creators.</p>
+            </div>
+            <div class="feature-item">
+                <img src="../Asset/Picture/internet-browser.png" alt="Easy to Browse Artworks Icon" class="feature-icon">
+                <h4>Easy to Browse Artworks</h4>
+                <p>Easily explore a wide range of artworks grouped under specific tags.</p>
+            </div>
+            <div class="feature-item">
+                <img src="../Asset/Picture/stopwatch.png" alt="Real-Time Activity Icon" class="feature-icon">
+                <h4>Real-Time Activity</h4>
+                <p>Stay updated with the latest activities and trending art.</p>
+            </div>
+        </div>
+    </section>
+    
+    <div class="footer">
+        <hr>
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="Home.html"><img src="../Asset/Picture/Picverse_logo.png" alt="Picverse Logo"></a>
+    
+                    <div class="logo-text">
+                        <a href="Home.html">
+                            <h1>Picverse</h1>
+                            <h2>Community</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                    </div>
+                    <div class="link-group">
+                    <h3>Quick Link</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-icons">
+                    <a href="#"><img src="../Asset/Picture/twitter.png" alt="X"></a>
+                    <a href="#"><img src="../Asset/Picture/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="../Asset/Picture/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="../Asset/Picture/mail.png" alt="Email"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<!-- KONEK JS -->
+ <script src="../JS/Script-AboutUs.js" defer></script>
+<script src="../JS/main.js" defer></script>
+</html>
